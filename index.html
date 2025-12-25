@@ -4,123 +4,335 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Spa Pets Brasil | Banho e Tosa Premium</title>
+  <title>Spa Pets Brasil | Banho e Tosa Premium no Buritis e Estoril</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Banho e tosa premium em BH. Cuidado, carinho e estética profissional para seu pet. Agende online no Spa Pets Brasil.">
-  <meta name="keywords" content="banho e tosa, petshop, estética pet, spa pets, banho premium">
-  <meta name="author" content="Spa Pets Brasil">
+  <meta name="description" content="Banho e tosa premium no Buritis e Estoril, Belo Horizonte. Ambiente seguro, climatizado e cuidado extraordinário para seu pet.">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Spa Pets Brasil">
-  <meta property="og:description" content="Banho e tosa premium para seu pet sair limpo, cheiroso e feliz 🐾">
-  <meta property="og:image" content="logo_spapets.webp">
-  <meta property="og:type" content="website">
+  <meta name="keywords" content="banho e tosa Buritis, banho e tosa Estoril BH, petshop Buritis, spa pet Belo Horizonte">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="logo_spapets.webp">
+  <!-- SEO LOCAL -->
+  <meta name="geo.region" content="BR-MG">
+  <meta name="geo.placename" content="Buritis, Estoril, Belo Horizonte">
+  <meta name="geo.position" content="-19.9736;-43.9646">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
+    body {
+      background: #f8f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ANIMAÇÕES SUAVES */
+    .fade-up {
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* HEADER FIXO */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 18px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #f4b400;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 120px 24px 40px;
+      text-align: center;
+    }
+
+    /* LOGO */
+    .logo img {
+      max-width: 240px;
+      width: 100%;
+      margin: 0 auto 30px;
+      display: block;
+    }
+
+    /* HERO */
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #f4b400;
+      color: #000;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* SEÇÕES */
+    section {
+      margin-top: 80px;
+    }
+
+    section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    /* SERVIÇOS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 14px;
+    }
+
+    /* ESPAÇO */
+    .space-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .space-grid img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    /* FEEDBACKS */
+    .feedback {
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .stars {
+      color: #f4b400;
+      font-size: 1.2rem;
+    }
+
+    /* MAPA */
+    .map {
+      margin-top: 60px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      background: #25d366;
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      z-index: 999;
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .space-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <img src="logo_spapets.webp" alt="Spa Pets Brasil" class="logo" loading="lazy">
-  </header>
+<header>
+  <div class="header-container">
+    <strong>Spa Pets Brasil</strong>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#espaco">Espaço</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="https://spa-pets.cuk.pet">Agendar</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
 
   <!-- HERO -->
-  <section class="hero">
-    <h1>Banho e Tosa Premium para seu pet sair limpo, cheiroso e feliz 🐾</h1>
-    <p>Cuidado profissional, ambiente seguro e muito carinho em cada detalhe.</p>
-    <a href="https://spa-pets.cuk.pet" target="_blank" class="btn-principal">Agendar Agora</a>
-  </section>
+  <div class="logo fade-up">
+    <img src="logo_spapets.webp" alt="Spa Pets Brasil">
+  </div>
+
+  <div class="hero fade-up">
+    <h1>Aqui começa o extraordinário</h1>
+    <h2>Banho e tosa premium no Buritis e Estoril</h2>
+    <a href="https://spa-pets.cuk.pet" class="btn">Agendar Agora</a>
+  </div>
 
   <!-- SERVIÇOS -->
-  <section id="servicos" class="section">
-    <h2>Nossos Serviços Premium</h2>
+  <section id="servicos">
+    <h3>Nossos Serviços Premium</h3>
+    <p class="subtitle">Tratamentos pensados para o bem-estar do seu pet</p>
 
-    <div class="services">
+    <div class="grid">
       <div class="card">
-        <img src="img/banho.webp" alt="Banho Standard" loading="lazy">
-        <h3>Banho Standard</h3>
-        <p>Limpeza profunda, hidratação e perfume especial.</p>
+        <img src="banho.webp">
+        <h4>Banho Standard</h4>
+        <p>Limpeza profunda e perfume especial.</p>
       </div>
 
       <div class="card">
-        <img src="img/tosa.webp" alt="Tosas Especiais" loading="lazy">
-        <h3>Tosas Especiais</h3>
-        <p>Tosa higiênica, na tesoura ou na máquina.</p>
+        <img src="tosa.webp">
+        <h4>Tosas Especiais</h4>
+        <p>Tosa higiênica, na tesoura ou máquina.</p>
       </div>
 
       <div class="card">
-        <img src="img/hidratacao.webp" alt="Hidratação Super Premium" loading="lazy">
-        <h3>Hidratação Super Premium</h3>
-        <p>Pelos mais macios, brilhosos e saudáveis.</p>
+        <img src="hidratacao.webp">
+        <h4>Hidratação Super Premium</h4>
+        <p>Pelos macios e saudáveis.</p>
       </div>
 
       <div class="card">
-        <img src="img/pacotes.webp" alt="Pacotes Mensais" loading="lazy">
-        <h3>Pacotes Mensais</h3>
-        <p>Economia, praticidade e cuidado contínuo para seu pet.</p>
+        <img src="pacotes.webp">
+        <h4>Pacotes Mensais</h4>
+        <p>Economia e cuidado contínuo.</p>
       </div>
     </div>
   </section>
 
   <!-- ESPAÇO -->
-  <section id="espaco" class="section section-light">
-    <h2>Nosso Espaço</h2>
-    <p>Ambiente seguro, climatizado e pensado para o bem-estar do seu pet.</p>
+  <section id="espaco">
+    <h3>Nosso Espaço</h3>
+    <p class="subtitle">Ambiente seguro e climatizado</p>
 
-    <div class="galeria">
-      <img src="img/espaco1.webp" alt="Espaço Spa Pets" loading="lazy">
-      <img src="img/espaco2.webp" alt="Espaço Spa Pets" loading="lazy">
-      <img src="img/espaco3.webp" alt="Espaço Spa Pets" loading="lazy">
+    <div class="space-grid">
+      <img src="espaco1.webp">
+      <img src="espaco2.webp">
+      <img src="espaco3.webp">
     </div>
   </section>
 
   <!-- FEEDBACKS -->
-  <section id="feedbacks" class="section">
-    <h2>O que nossos clientes dizem</h2>
+  <section id="avaliacoes">
+    <h3>O que nossos clientes dizem</h3>
 
-    <div class="feedbacks">
-      <div class="feedback">
-        ⭐⭐⭐⭐⭐
-        <p>Meu pet saiu super feliz e cheiroso. Atendimento impecável!</p>
-        <strong>Avaliação do Google</strong>
-      </div>
+    <div class="feedback">
+      <div class="stars">★★★★★</div>
+      <p>Meu pet saiu super feliz e cheiroso. Atendimento impecável!</p>
+    </div>
 
-      <div class="feedback">
-        ⭐⭐⭐⭐⭐
-        <p>Espaço lindo, profissionais cuidadosos e muito atenciosos.</p>
-        <strong>Avaliação do Google</strong>
-      </div>
-
-      <div class="feedback">
-        ⭐⭐⭐⭐⭐
-        <p>Melhor banho e tosa da região. Confiança total.</p>
-        <strong>Avaliação do Google</strong>
-      </div>
+    <div class="feedback">
+      <div class="stars">★★★★★</div>
+      <p>Melhor banho e tosa do Buritis e Estoril.</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2025 Spa Pets Brasil — Todos os direitos reservados
-  </footer>
+  <!-- MAPA -->
+  <section>
+    <h3>Onde estamos</h3>
+    <p class="subtitle">Buritis / Estoril – Belo Horizonte</p>
 
-  <!-- WHATSAPP FLUTUANTE -->
-  <a href="https://wa.me/5531998050158" class="whatsapp-fixo" target="_blank" aria-label="WhatsApp Spa Pets">💬</a>
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps?q=Buritis+Belo+Horizonte&output=embed"
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/5531998050158" target="_blank">💬</a>
 
 </body>
 </html>
