@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Spa Pets Brasil</title>
+  <title>Spa Pets Brasil | Banho e Tosa Premium</title>
 
   <!-- SEO -->
-  <meta name="description" content="Centro estético pet: banho, tosa e hidratação premium com carinho e segurança.">
-  <meta name="keywords" content="petshop, banho e tosa, estética pet, spa pets">
+  <meta name="description" content="Banho e tosa premium em BH. Cuidado, carinho e estética profissional para seu pet. Agende online no Spa Pets Brasil.">
+  <meta name="keywords" content="banho e tosa, petshop, estética pet, spa pets, banho premium">
   <meta name="author" content="Spa Pets Brasil">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Spa Pets Brasil">
-  <meta property="og:description" content="Banho, tosa e estética premium para pets.">
+  <meta property="og:description" content="Banho e tosa premium para seu pet sair limpo, cheiroso e feliz 🐾">
   <meta property="og:image" content="logo_spapets.webp">
   <meta property="og:type" content="website">
 
@@ -27,110 +27,100 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);} 
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXX');
   </script>
-
-  <!-- Facebook Pixel -->
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;
-      n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];
-      t=b.createElement(e);t.async=!0;
-      t.src=v;
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','000000000000000');
-    fbq('track','PageView');
-  </script>
 </head>
-
 <body>
 
-<header>
-  <img
-    src="logo_spapets.webp"
-    alt="Spa Pets Brasil"
-    width="420"
-    height="140"
-    loading="lazy">
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="logo_spapets.webp" alt="Spa Pets Brasil" class="logo" loading="lazy">
+  </header>
 
-<nav style="background:#F29424;padding:15px;text-align:center">
-  <a href="#servicos" style="color:#fff;margin:0 15px;font-weight:700;text-decoration:none">Serviços</a>
-  <a href="#espaco" style="color:#fff;margin:0 15px;font-weight:700;text-decoration:none">Nosso Espaço</a>
-  <a href="#agendar" style="color:#fff;margin:0 15px;font-weight:700;text-decoration:none">Agende Agora</a>
-</nav>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Banho e Tosa Premium para seu pet sair limpo, cheiroso e feliz 🐾</h1>
+    <p>Cuidado profissional, ambiente seguro e muito carinho em cada detalhe.</p>
+    <a href="https://spa-pets.cuk.pet" target="_blank" class="btn-principal">Agendar Agora</a>
+  </section>
 
-<div style="text-align:center; margin-top:10px;">
-  <a
-    href="https://instagram.com/spapetsbrasil"
-    class="btn"
-    style="background:#1C4591;"
-    target="_blank"
-    rel="noopener"
-    onclick="gtag('event','click_instagram',{event_category:'engajamento',event_label:'instagram'});">
-    Instagram @spapetsbrasil
-  </a>
-</div>
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section">
+    <h2>Nossos Serviços Premium</h2>
 
-<section class="hero" id="inicio">
-  <h2>O centro estético que muda a rotina do seu pet</h2>
-  <p>
-    Banho, tosa, hidratação e muito mais — tudo com segurança e profissionais apaixonados por pets.
-  </p>
-  <a href="#agendar" class="btn">Agendar Agora</a>
-</section>
+    <div class="services">
+      <div class="card">
+        <img src="img/banho.webp" alt="Banho Standard" loading="lazy">
+        <h3>Banho Standard</h3>
+        <p>Limpeza profunda, hidratação e perfume especial.</p>
+      </div>
 
-<section id="servicos">
-  <h2>Nossos Serviços Premium</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Banho Standard</h3>
-      <p>Limpeza profunda, hidratação e perfume especial.</p>
+      <div class="card">
+        <img src="img/tosa.webp" alt="Tosas Especiais" loading="lazy">
+        <h3>Tosas Especiais</h3>
+        <p>Tosa higiênica, na tesoura ou na máquina.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/hidratacao.webp" alt="Hidratação Super Premium" loading="lazy">
+        <h3>Hidratação Super Premium</h3>
+        <p>Pelos mais macios, brilhosos e saudáveis.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/pacotes.webp" alt="Pacotes Mensais" loading="lazy">
+        <h3>Pacotes Mensais</h3>
+        <p>Economia, praticidade e cuidado contínuo para seu pet.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Tosas Especiais</h3>
-      <p>Tosa higiênica, na tesoura ou na máquina.</p>
+  </section>
+
+  <!-- ESPAÇO -->
+  <section id="espaco" class="section section-light">
+    <h2>Nosso Espaço</h2>
+    <p>Ambiente seguro, climatizado e pensado para o bem-estar do seu pet.</p>
+
+    <div class="galeria">
+      <img src="img/espaco1.webp" alt="Espaço Spa Pets" loading="lazy">
+      <img src="img/espaco2.webp" alt="Espaço Spa Pets" loading="lazy">
+      <img src="img/espaco3.webp" alt="Espaço Spa Pets" loading="lazy">
     </div>
-    <div class="card">
-      <h3>Hidratação Super Premium</h3>
-      <p>Pelos mais macios, saudáveis e brilhosos.</p>
+  </section>
+
+  <!-- FEEDBACKS -->
+  <section id="feedbacks" class="section">
+    <h2>O que nossos clientes dizem</h2>
+
+    <div class="feedbacks">
+      <div class="feedback">
+        ⭐⭐⭐⭐⭐
+        <p>Meu pet saiu super feliz e cheiroso. Atendimento impecável!</p>
+        <strong>Avaliação do Google</strong>
+      </div>
+
+      <div class="feedback">
+        ⭐⭐⭐⭐⭐
+        <p>Espaço lindo, profissionais cuidadosos e muito atenciosos.</p>
+        <strong>Avaliação do Google</strong>
+      </div>
+
+      <div class="feedback">
+        ⭐⭐⭐⭐⭐
+        <p>Melhor banho e tosa da região. Confiança total.</p>
+        <strong>Avaliação do Google</strong>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="agendar">
-  <h2>Agende o Banho</h2>
-  <p>Escolha o melhor horário e traga seu pet para viver a experiência Spa Pets.</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 Spa Pets Brasil — Todos os direitos reservados
+  </footer>
 
-  <a
-    href="https://wa.me/5531998050158?text=Olá!%20Vim%20pelo%20site%20do%20Spa%20Pets%20e%20gostaria%20de%20agendar%20um%20banho."
-    class="btn"
-    target="_blank"
-    rel="noopener"
-    onclick="gtag('event','click_whatsapp',{event_category:'conversao',event_label:'botao_agendar'});">
-    Agendar pelo WhatsApp
-  </a>
-</section>
-
-<section id="espaco">
-  <h2>Nosso Espaço</h2>
-  <p>Ambiente seguro, climatizado e cheio de carinho para o seu pet.</p>
-  <div style="height:200px;background:#FABD0A;border-radius:10px;margin-top:20px;display:flex;align-items:center;justify-content:center;color:#1C4591;font-weight:700">
-    Foto / Galeria futuramente
-  </div>
-</section>
-
-<footer>
-  © 2025 Spa Pets Brasil — Todos os direitos reservados
-</footer>
+  <!-- WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5531998050158" class="whatsapp-fixo" target="_blank" aria-label="WhatsApp Spa Pets">💬</a>
 
 </body>
 </html>
