@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Spa Pets Brasil | Buritis e Estoril</title>
 
-<meta name="description" content="Spa Pets Brasil – Banho e tosa premium no Buritis e Estoril. Ambiente seguro, aconchegante e cuidado profissional para seu pet.">
-<meta name="keywords" content="banho e tosa buritis, petshop estoril, spa pets brasil, banho premium pet">
+<meta name="description" content="Spa Pets Brasil – Banho e tosa premium no Buritis e Estoril. Ambiente seguro e aconchegante.">
+<meta name="keywords" content="banho e tosa buritis, petshop estoril, spa pets brasil">
 <meta name="author" content="Spa Pets Brasil">
 
-<link rel="icon" href="logo_spapets.webp">
+<link rel="icon" href="img/logo_spapets.webp">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
@@ -18,85 +18,165 @@ body{background:#fff;color:#333;line-height:1.6}
 /* HEADER */
 header{
 position:fixed;top:0;width:100%;background:#fff;
-display:flex;justify-content:center;align-items:center;
-padding:10px 20px;box-shadow:0 2px 8px rgba(0,0,0,.08);z-index:1000
+display:flex;justify-content:center;
+padding:12px 20px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+z-index:1000
 }
-header img{max-width:220px;height:auto}
+header img{
+max-width:180px;
+height:auto;
+}
 
 /* MENU */
 nav{
 margin-top:90px;
-display:flex;justify-content:center;gap:25px;
-background:#F29424;padding:14px;flex-wrap:wrap
+display:flex;
+justify-content:center;
+gap:22px;
+background:#F29424;
+padding:14px;
+flex-wrap:wrap
 }
-nav a{color:#fff;text-decoration:none;font-weight:700}
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:700;
+}
 
 /* HERO */
-.hero{text-align:center;padding:80px 20px 60px}
-.hero h1{font-size:2.4rem;margin-bottom:15px}
-.hero p{max-width:700px;margin:0 auto 30px;font-size:1.1rem}
+.hero{
+text-align:center;
+padding:70px 20px 60px;
+max-width:900px;
+margin:auto
+}
+.hero h1{
+font-size:2.3rem;
+margin-bottom:15px
+}
+.hero p{
+margin-bottom:30px;
+font-size:1.05rem
+}
 .btn{
-display:inline-block;background:#F29424;color:#fff;
-padding:14px 30px;border-radius:30px;
-font-weight:700;text-decoration:none
+display:inline-block;
+background:#F29424;
+color:#fff;
+padding:14px 34px;
+border-radius:30px;
+font-weight:700;
+text-decoration:none
 }
 
 /* SECTIONS */
-section{padding:60px 20px;max-width:1200px;margin:auto;text-align:center}
-h2{font-size:2rem;margin-bottom:30px}
+section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+text-align:center
+}
+h2{
+font-size:2rem;
+margin-bottom:35px
+}
 
-/* CARDS */
+/* GRID */
 .grid{
-display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:25px
 }
+
+/* CARDS */
 .card{
-background:#fff;border-radius:16px;padding:20px;
-box-shadow:0 6px 20px rgba(0,0,0,.08);
+background:#fff;
+border-radius:16px;
+padding:18px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
 transition:.3s
 }
-.card:hover{transform:translateY(-6px)}
-.card img{width:100%;border-radius:12px;margin-bottom:15px}
+.card:hover{transform:translateY(-5px)}
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:12px
+}
 
 /* ESPAÇO */
-.space img{border-radius:16px;width:100%}
+.space img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:16px
+}
 
 /* FEEDBACKS */
-.feedback{max-width:800px;margin:auto;position:relative}
+.feedback{
+max-width:780px;
+margin:auto;
+position:relative
+}
 .feedback-item{
-display:none;animation:fade .6s ease-in-out
+display:none;
+animation:fade .5s ease
 }
 .feedback-item.active{display:block}
-.stars{color:#F6B700;font-size:1.2rem;margin-bottom:10px}
-.arrow{
-position:absolute;top:50%;transform:translateY(-50%);
-font-size:30px;cursor:pointer;color:#F29424
+.stars{
+color:#F6B700;
+font-size:1.2rem;
+margin-bottom:10px
 }
-.arrow.left{left:-30px}
-.arrow.right{right:-30px}
+.arrow{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:30px;
+cursor:pointer;
+color:#F29424
+}
+.arrow.left{left:-28px}
+.arrow.right{right:-28px}
 
 @keyframes fade{
-from{opacity:0;transform:translateY(10px)}
+from{opacity:0;transform:translateY(8px)}
 to{opacity:1;transform:translateY(0)}
 }
 
 /* MAPA */
-iframe{width:100%;height:300px;border-radius:16px;border:0}
+iframe{
+width:100%;
+height:300px;
+border-radius:16px;
+border:0
+}
 
 /* WHATSAPP */
 .whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:#fff;
-width:60px;height:60px;border-radius:50%;
-display:flex;align-items:center;justify-content:center;
-font-size:30px;text-decoration:none;
-box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:2000
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,.3);
+z-index:2000
 }
 
 /* MOBILE */
 @media(max-width:768px){
-.hero h1{font-size:1.9rem}
-nav{gap:15px}
+.hero h1{font-size:1.8rem}
+nav{gap:14px}
+.card img{height:160px}
+.space img{height:180px}
 .arrow{display:none}
 }
 </style>
@@ -105,7 +185,7 @@ nav{gap:15px}
 <body>
 
 <header>
-<img src="logo_spapets.webp" alt="Spa Pets Brasil">
+<img src="img/logo_spapets.webp" alt="Spa Pets Brasil" loading="lazy">
 </header>
 
 <nav>
@@ -116,18 +196,30 @@ nav{gap:15px}
 
 <section class="hero">
 <h1>Aqui começa o extraordinário</h1>
-<p>Banho e tosa premium para seu pet sair limpo, cheiroso e feliz 🐾  
-Ambiente seguro e aconchegante, com cuidado profissional em cada detalhe.</p>
+<p>Banho e tosa premium para pets no Buritis e Estoril.  
+Ambiente seguro e aconchegante, com cuidado profissional.</p>
 <a class="btn" href="https://spa-pets.cuk.pet" target="_blank">Agende Agora</a>
 </section>
 
 <section id="servicos">
 <h2>Nossos Serviços Premium</h2>
 <div class="grid">
-<div class="card"><img src="banho.webp"><h3>Banho Standard</h3></div>
-<div class="card"><img src="tosa.webp"><h3>Tosas Especiais</h3></div>
-<div class="card"><img src="hidratacao.webp"><h3>Hidratação Super Premium</h3></div>
-<div class="card"><img src="pacotes.webp"><h3>Pacotes Mensais</h3></div>
+<div class="card">
+<img src="img/banho.webp" loading="lazy">
+<h3>Banho Standard</h3>
+</div>
+<div class="card">
+<img src="img/tosa.webp" loading="lazy">
+<h3>Tosas Especiais</h3>
+</div>
+<div class="card">
+<img src="img/hidratacao.webp" loading="lazy">
+<h3>Hidratação Super Premium</h3>
+</div>
+<div class="card">
+<img src="img/pacotes.webp" loading="lazy">
+<h3>Pacotes Mensais</h3>
+</div>
 </div>
 </section>
 
@@ -135,15 +227,16 @@ Ambiente seguro e aconchegante, com cuidado profissional em cada detalhe.</p>
 <h2>Nosso Espaço</h2>
 <p>Ambiente seguro e aconchegante, pensado para o bem-estar do seu pet.</p>
 <div class="grid space">
-<img src="espaco1.webp">
-<img src="espaco2.webp">
-<img src="espaco3.webp">
+<img src="img/espaco1.webp" loading="lazy">
+<img src="img/espaco2.webp" loading="lazy">
+<img src="img/espaco3.webp" loading="lazy">
 </div>
 </section>
 
 <section id="avaliacoes">
 <h2>O que nossos clientes dizem</h2>
 <div class="feedback">
+
 <div class="arrow left" onclick="prev()">‹</div>
 <div class="arrow right" onclick="next()">›</div>
 
@@ -171,6 +264,7 @@ Ambiente seguro e aconchegante, com cuidado profissional em cada detalhe.</p>
 <div class="stars">★★★★★</div>
 <p>Maravilhoso, o Felipe tem um carinho enorme com os animais...</p>
 </div>
+
 </div>
 </section>
 
@@ -183,8 +277,12 @@ Ambiente seguro e aconchegante, com cuidado profissional em cada detalhe.</p>
 <a class="whatsapp" href="https://wa.me/5531998050158" target="_blank">🟢</a>
 
 <script>
-let i=0;const items=document.querySelectorAll('.feedback-item');
-function show(n){items.forEach(el=>el.classList.remove('active'));items[n].classList.add('active')}
+let i=0;
+const items=document.querySelectorAll('.feedback-item');
+function show(n){
+items.forEach(el=>el.classList.remove('active'));
+items[n].classList.add('active');
+}
 function next(){i=(i+1)%items.length;show(i)}
 function prev(){i=(i-1+items.length)%items.length;show(i)}
 setInterval(next,6000);
